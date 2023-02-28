@@ -8,3 +8,5 @@
 **So that** I am qualified to work on a capstone dev team (and get an awesome job)
 
 made an restful API
+
+add comments to code and pull request
