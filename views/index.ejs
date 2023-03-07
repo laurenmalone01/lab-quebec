@@ -1,0 +1,25 @@
+<h3> Current Fruit on hand</h3> 
+ <% for (var i=0; i< fruitData.length; i++ ) { %>
+  <form method="POST" action="/deleteFruit/<%= fruitData[i]._id %>" style="display: inline-block">  
+    <%= fruitData[i].fruit %> (<%= fruitData[i].size %>) 
+    <input type="submit" value="delete"> 
+  </form>
+  <br/>
+<% } %> 
+
+<h3> Update a fruit</h3> 
+ <% for (var i=0; i< fruitData.length; i++ ) { %>
+  <form method="POST" action="/updateFruit/<%= fruitData[i]._id %>" style="display: inline-block">  
+    <%= fruitData[i].fruit %> (<%= fruitData[i].size %>) 
+    <input type="submit" value="update"> 
+  </form>
+  <br/>
+<% } %> 
+<!-- update our db -->
+
+<form method="get" action="/create">
+    <p>Give an fruit name</p>
+    <input type="text" name="ejsFormName" value=""> 
+    <input type="submit">
+  </form>
+  
