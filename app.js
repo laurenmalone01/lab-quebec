@@ -58,6 +58,10 @@ app.get('/create', async (req, res) => {
   await collection.insertOne({ 
     fruit: fruit_input
 })
+.then(result => {
+  console.log(result); 
+  res.redirect('/');
+})
 
 })
 
